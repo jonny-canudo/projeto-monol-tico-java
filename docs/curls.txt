@@ -1,0 +1,54 @@
+#
+# Endpoint's Entidade 'Locality'
+#
+curl -X POST -H "Content-Type: application/json" http://localhost:8081/backend-jaxrs-java/controllers/locality -d '{"dclocality":"Acre"}'
+curl -X GET -H "Content-Type: application/json" http://localhost:8081/backend-jaxrs-java/controllers/locality
+curl -X GET -H "Content-Type: application/json" http://localhost:8081/backend-jaxrs-java/controllers/locality/1
+curl -X PUT -H "Content-Type: application/json" http://localhost:8081/backend-jaxrs-java/controllers/locality/1 -d '{"dclocality":"Acre"}'
+curl -X DELETE -H "Content-Type: application/json" http://localhost:8081/backend-jaxrs-java/controllers/locality/13
+
+#
+# Endpoint's Entidade 'User'
+#
+curl -X POST -H "Content-Type: application/json" http://localhost:8081/backend-jaxrs-java/controllers/user -d '{"dcname":"Karen7","dcmail":"karen@gmail.com","dcpass":"1234"}'
+curl -X GET -H "Content-Type: application/json" http://localhost:8081/backend-jaxrs-java/controllers/user
+curl -X GET -H "Content-Type: application/json" http://localhost:8081/backend-jaxrs-java/controllers/user/1
+curl -X PUT -H "Content-Type: application/json" http://localhost:8081/backend-jaxrs-java/controllers/user/10 -d '{"dcname":"Karen10","dcmail":"cesar@gmai.com","dcpass":"1234"}'
+curl -X DELETE -H "Content-Type: application/json" http://localhost:8081/backend-jaxrs-java/controllers/user/5
+
+#
+# Endpoint's Entidade 'Meusdados'
+#
+curl -X POST -H "Content-Type: application/json" http://localhost:8081/backend-jaxrs-java/controllers/meusdados -d '{"dcmail":"jpcanuto789@gmail.com", "dcsenha":"1234"}'
+curl -X GET -H "Content-Type: application/json" http://localhost:8081/backend-jaxrs-java/controllers/meusdados
+curl -X GET -H "Content-Type: application/json" http://localhost:8081/backend-jaxrs-java/controllers/meusdados/1
+curl -X PUT -H "Content-Type: application/json" http://localhost:8081/backend-java/controllers/meusdados/1 -d '{"dcmail":"jpamaral@gmail.com", "dcsenha":"12345"  }'
+curl -X DELETE -H "Content-Type: application/json" http://localhost:8081/backend-jaxrs-java/controllers/meusdados/1
+
+#
+# Endpoint's Entidade 'Teste'
+#
+curl -X POST -H "Content-Type: application/json" http://localhost:8081/backend-jaxrs-java/controllers/teste -d '{"dcemail":"jpcanuto789@gmail.com", "dcsenha":"1234"}'
+curl -X GET -H "Content-Type: application/json" http://localhost:8081/backend-jaxrs-java/controllers/teste
+curl -X GET -H "Content-Type: application/json" http://localhost:8081/backend-jaxrs-java/controllers/teste/1
+curl -X PUT -H "Content-Type: application/json" http://localhost:8081/backend-jaxrs-java/controllers/teste/1 -d '{"dcemail":"jpamaral@gmail.com", "dcsenha":"12345"  }'
+curl -X DELETE -H "Content-Type: application/json" http://localhost:8081/backend-jaxrs-java/controllers/teste/1
+
+#
+# Endpoint's Entidade 'Contatos'
+#
+curl -X POST -H "Content-Type: application/json" http://localhost:8081/backend-jaxrs-java/controllers/contatos -d '{"dcnomes":"joão pedro canuto", "dcemail":"jpcanuto789@gmail.com", "dcendereco":"fdsagdsag", "nutelefone":"61991965605", "dtnascimento":"2010/08/25"}'
+curl -X GET -H "Content-Type: application/json" http://localhost:8081/backend-jaxrs-java/controllers/contatos
+curl -X GET -H "Content-Type: application/json" http://localhost:8081/backend-jaxrs-java/controllers/contatos/1
+curl -X PUT -H "Content-Type: application/json" http://localhost:8081/backend-jaxrs-java/controllers/contatos/1 -d '{"dcnome":"joão pedro canuto", "dcemail":"jpcanuto789@gmail.com", "dcendereco":"fdsagdsag", "nutelefone":"61991965605", "dtnascimento":"2010/08/25"}'
+curl -X DELETE -H "Content-Type: application/json" http://localhost:8081/backend-jaxrs-java/controllers/contatos/1
+
+
+
+
+
+
+#
+# Endpoint Entidade 'Login'
+#
+curl -X GET -H "Content-Type: application/json" http://localhost:8081/backend-jaxrs-java/controllers/login -d '{"mail":"cesar.smith@gmail.com","pass":"1234"}'
